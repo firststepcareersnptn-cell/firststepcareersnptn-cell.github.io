@@ -1,48 +1,130 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>First Step Careers</title>
 <style>
+/* BASE STYLES */
 body {
-  font-family: Arial;
-  text-align: center;
-  margin:0;
-  background:#f4f4f4;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #111; /* Black background */
+    color: #fff; /* White text */
+    line-height: 1.6;
 }
 
+/* LINKS AND BUTTONS */
+a {
+    color: #FFD6A5; /* pastel accent */
+    text-decoration: none;
+}
+
+button {
+    background: #A0C4FF; /* pastel blue button */
+    color: #111;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #FFC6FF; /* pastel pink hover */
+}
+
+/* HEADER SECTION */
 header {
-  background:#222;
-  color:white;
-  padding:40px;
+    text-align: center;
+    padding: 80px 20px;
+    background: #000;
 }
 
-section{
-  padding:40px;
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
 }
 
-button{
-  background:#0077ff;
-  color:white;
-  border:none;
-  padding:12px 20px;
-  border-radius:6px;
-  cursor:pointer;
+header p {
+    font-size: 1.3rem;
+    color: #ccc;
+}
+
+/* SECTIONS */
+section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff;
+    border-bottom: 2px solid #444;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* ABOUT / SERVICES CARDS */
+.card {
+    background: #222;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    background: #333;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #000;
+    color: #888;
+}
+
+/* RESPONSIVE GRID FOR CARDS */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
 }
 </style>
 </head>
-
 <body>
 
+<!-- HEADER -->
 <header>
-<h1>First Step Careers</h1>
-<p>Your journey starts here</p>
+    <h1>First Step Careers</h1>
+    <p>Your journey to a successful career starts here</p>
+    <button onclick="window.location='#contact'">Contact Us</button>
 </header>
 
-<section>
-<h2>Welcome</h2>
-<p>This website is hosted for free using GitHub Pages.</p>
-<button>Learn More</button>
+<!-- ABOUT SECTION -->
+<section id="about">
+    <h2>About Us</h2>
+    <div class="card">
+        <p>We help students and young professionals take their first steps into the career world with guidance, resources, and support.</p>
+    </div>
 </section>
 
-</body>
-</html>
+<!-- SERVICES SECTION -->
+<section id="services">
+    <h2>Services</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Career Guidance</h3>
+            <p>Personalized career advice and mentorship for your goals.</p>
+        </div>
+        <div class="card">
+            <h3>Resume Building</h3>
+            <p>Create a professional resume that stands out to employers.</p>
+        </div>
+        <div class="card">
+            <h3>Workshops</
