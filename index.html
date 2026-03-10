@@ -101,15 +101,21 @@ section h2 {
 
 /* ABOUT / SERVICES CARDS */
 .card {
-    background: #222;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 8px;
-    transition: 0.3s;
+  background: #222;
+  padding: 25px;
+  margin: 20px 0;
+  border-radius: 10px;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  border: 1px solid #333;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-    background: #333;
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+  border: 1px solid #A0C4FF;
 }
 
 /* FOOTER */
